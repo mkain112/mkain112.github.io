@@ -21,7 +21,7 @@ description: >-
 
 # Fill in your GitHub Pages URL (no trailing slash)
 url: "https://mkain112.github.io/website2.0"
-baseurl: "/website2.0"
+
 
 github:
   username: mkain112
