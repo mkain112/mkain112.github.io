@@ -1,7 +1,7 @@
 # The Site Configuration
 
 # Import the theme
-theme: jekyll-theme-chirpy
+remote_theme: jekyll-theme-chirpy
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 lang: en
@@ -115,7 +115,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site (empty for root)
-baseurl: ""
+baseurl: "/mkain112.github.io"
 
 # ------------ The following options are not recommended to be modified ------------------
 
