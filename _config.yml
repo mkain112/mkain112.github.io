@@ -1,27 +1,32 @@
-# The Site Configuration
+# ============================================================
+#  The Site Configuration
+# ============================================================
 
-# Import the theme
+# Use the Chirpy theme via GitHub’s remote theme feature
 remote_theme: cotes2020/jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-lang: en
+# Jekyll plugins required for Chirpy + GitHub Pages
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-archives
 
-# Timezone for posts and time display
+# Language and timezone
+lang: en
 timezone: America/New_York
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
+# ============================================================
+#  Site Info and SEO
+# ============================================================
 
-title: Mitch Kain # Main title
-
+title: Mitch Kain
 tagline: Mechanical Engineer | Robotics and Rockets | Data Scientist | USMC Veteran
-
 description: >-
   An engineer who can calculate, code, model, prototype, and test — based in Brooklyn, NY.
 
-# Fill in your GitHub Pages URL (no trailing slash)
+# Correct GitHub Pages URL (no trailing slash)
 url: "https://mkain112.github.io"
-
+baseurl: ""  # Empty since it’s hosted at the root (not /mkain112.github.io)
 
 github:
   username: mkain112
@@ -31,9 +36,8 @@ social:
   email: mitchell.kain@gmail.com
   links:
     - https://github.com/mkain112
-    - https://www.linkedin.com/in/mitchell-kain
+    - https://www.linkedin.com/in/mitchell-kain/
 
-# Site Verification Settings
 webmaster_verifications:
   google:
   bing:
@@ -42,44 +46,19 @@ webmaster_verifications:
   baidu:
   facebook:
 
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# ============================================================
+#  Appearance and Functionality
+# ============================================================
 
-# Web Analytics Settings
-analytics:
-  google:
-    id:
-  goatcounter:
-    id:
-  umami:
-    id:
-    domain:
-  matomo:
-    id:
-    domain:
-  cloudflare:
-    id:
-  fathom:
-    id:
-
-# Page views settings
-pageviews:
-  provider:
-
-# Prefer color scheme setting.
 theme_mode: # [light | dark]
-
-# The CDN endpoint for media resources.
-cdn:
-
-# Sidebar avatar
 avatar: "/assets/profile.jpg"
-
-# The site-wide social preview image used in SEO `og:image` meta tag
 social_preview_image:
 
-# Global switch for Table of Contents
 toc: true
+
+# ============================================================
+#  Comments and Analytics
+# ============================================================
 
 comments:
   provider:
@@ -99,13 +78,29 @@ comments:
     lang:
     reactions_enabled:
 
-# Self-hosted static assets
-assets:
-  self_host:
-    enabled:
-    env: # [development | production]
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+  umami:
+    id:
+    domain:
+  matomo:
+    id:
+    domain:
+  cloudflare:
+    id:
+  fathom:
+    id:
 
-# Progressive Web App configuration
+pageviews:
+  provider:
+
+# ============================================================
+#  Progressive Web App
+# ============================================================
+
 pwa:
   enabled: true
   cache:
@@ -114,10 +109,9 @@ pwa:
 
 paginate: 10
 
-# The base URL of your site (empty for root)
-baseurl: "/mkain112.github.io"
-
-# ------------ The following options are not recommended to be modified ------------------
+# ============================================================
+#  Build Settings
+# ============================================================
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
@@ -186,4 +180,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
+    
