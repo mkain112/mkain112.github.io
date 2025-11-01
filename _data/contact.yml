@@ -2,45 +2,42 @@
 
 - type: github
   icon: "fab fa-github"
+  url: "https://github.com/mkain112"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/mitchell-kain/"
 
 - type: email
   icon: "fas fa-envelope"
+  url: "mailto:mitchell.kain@gmail.com"
   noblank: true # open link in current tab
 
 - type: rss
   icon: "fas fa-rss"
   noblank: true
-# Uncomment and complete the url below to enable more contact options
-#
+
+# Optional additional links
 # - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
+#   icon: "fab fa-mastodon"
+#   url: ""
 #
-<<<<<<< HEAD
- - type: linkedin
-   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-   url:  'https://www.linkedin.com/in/mitchell-kain/'                  # Fill with your Linkedin homepage
-=======
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
->>>>>>> v7.4.1
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
+#   url: ""
 #
 # - type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
+#   icon: "fab fa-stack-overflow"
+#   url: ""
 #
 # - type: bluesky
-#   icon: 'fa-brands fa-bluesky'
-#   url: ''                   # Fill with your Bluesky profile link
+#   icon: "fa-brands fa-bluesky"
+#   url: ""
 #
 # - type: reddit
-#   icon: 'fa-brands fa-reddit'
-#   url: ''                   # Fill with your Reddit profile link
+#   icon: "fa-brands fa-reddit"
+#   url: ""
 #
 # - type: threads
-#   icon: 'fa-brands fa-threads'
-#   url: ''                   # Fill with your Threads profile link
+#   icon: "fa-brands fa-threads"
+#   url: ""
