@@ -7,9 +7,13 @@ remote_theme: cotes2020/jekyll-theme-chirpy
 
 # Jekyll plugins required for Chirpy + GitHub Pages
 plugins:
-  - jekyll-paginate
   - jekyll-remote-theme
+  - jekyll-paginate
   - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
 
 # Language and timezone
 lang: en
