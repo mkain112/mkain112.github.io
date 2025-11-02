@@ -2,15 +2,18 @@
 
 source "https://rubygems.org"
 
-# Use Jekyll directly (v4.x is required for Chirpy)
+# Core Jekyll (Chirpy requires 4.x)
 gem "jekyll", "~> 4.4"
 
-# Chirpy is loaded remotely
-gem "jekyll-remote-theme"
-gem "jekyll-paginate"
-gem "jekyll-archives"
-gem "jekyll-seo-tag"      # ✅ required for Chirpy
-gem "webrick", "~> 1.8"
+# Required plugins
+gem "jekyll-remote-theme"   # load cotes2020/jekyll-theme-chirpy remotely
+gem "jekyll-paginate"       # blog pagination
+gem "jekyll-archives"       # categories & tags
+gem "jekyll-seo-tag"        # SEO tags
+gem "jekyll-sitemap"        # sitemap.xml generation
+gem "jekyll-feed"           # RSS feed
+gem "jekyll-include-cache"  # improves Chirpy performance
+gem "webrick", "~> 1.8"     # local server for Ruby 3+
 
 # Optional testing utilities
 gem "html-proofer", "~> 5.0", group: :test
