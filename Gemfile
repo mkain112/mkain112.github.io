@@ -2,14 +2,16 @@
 
 source "https://rubygems.org"
 
-# Chirpy theme via GitHub remote theme
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-remote-theme" # allows loading cotes2020/jekyll-theme-chirpy
-gem "jekyll-paginate"     # fixes pagination warning
-gem "jekyll-archives"     # enables categories/tags
-gem "webrick", "~> 1.8"   # needed for local testing with Ruby 3+
+# Use Jekyll directly (v4.x is required for Chirpy)
+gem "jekyll", "~> 4.4"
 
-# Optional but nice for local link checking
+# Chirpy is loaded remotely
+gem "jekyll-remote-theme"
+gem "jekyll-paginate"
+gem "jekyll-archives"
+gem "webrick", "~> 1.8"
+
+# Optional testing utilities
 gem "html-proofer", "~> 5.0", group: :test
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
