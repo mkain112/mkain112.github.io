@@ -9,6 +9,7 @@ gem "jekyll", "~> 4.4"
 gem "jekyll-remote-theme"
 gem "jekyll-paginate"
 gem "jekyll-archives"
+gem "jekyll-seo-tag"      # ✅ required for Chirpy
 gem "webrick", "~> 1.8"
 
 # Optional testing utilities
