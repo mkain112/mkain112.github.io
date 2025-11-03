@@ -40,6 +40,12 @@ jobs:
           
       - name: Debug file presence
         run: find . -type f -name "jekyll-theme-chirpy.scss" || echo "No file found"
+        
+      - name: Debug SCSS presence
+        run: |
+          echo "Checking for any jekyll-theme-chirpy.scss files..."
+          find . -type f -name "jekyll-theme-chirpy.scss" || echo "✅ None found"
+
 
       - name: Build site with Jekyll
         run: bundle exec jekyll build --trace
