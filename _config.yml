@@ -3,8 +3,8 @@
 # ============================================================
 
 # Use the Chirpy theme via GitHub’s remote theme feature
+theme: null
 remote_theme: cotes2020/jekyll-theme-chirpy
-# theme: null
 
 # Jekyll plugins required for Chirpy + GitHub Pages
 plugins:
