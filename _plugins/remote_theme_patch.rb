@@ -1,14 +1,21 @@
 # _plugins/remote_theme_patch.rb
-# Fixes MockGemspec bugs in jekyll-remote-theme when used with Chirpy
+# Compatibility patch for Chirpy + Jekyll 4.4.x + jekyll-remote-theme
+# Fixes missing MockGemspec behavior that breaks site builds on GitHub Pages.
 
 module Jekyll
   module RemoteTheme
     class MockGemspec
-      # Accept any arguments to stay compatible with upstream calls
+      # Accepts any args passed by newer Jekyll versions
       def initialize(*args)
-        # no-op
+        # nothing needed
       end
 
+      # Pretend the theme has no dependencies
+      def runtime_dependencies
+        []
+      end
+
+      # Return a fake version so Chirpy doesn't crash
       def version
         "0.0.0"
       end
