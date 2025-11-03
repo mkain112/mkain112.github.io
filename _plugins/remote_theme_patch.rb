@@ -1,9 +1,14 @@
 # _plugins/remote_theme_patch.rb
-# Patch to fix "undefined method `version` for MockGemspec" in remote_theme builds
+# Fixes MockGemspec bugs in jekyll-remote-theme when used with Chirpy
 
 module Jekyll
   module RemoteTheme
     class MockGemspec
+      # Accept any arguments to stay compatible with upstream calls
+      def initialize(*args)
+        # no-op
+      end
+
       def version
         "0.0.0"
       end
