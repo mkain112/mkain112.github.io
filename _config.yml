@@ -156,6 +156,7 @@ exclude:
   - jekyll-theme-chirpy/_tabs
   - jekyll-theme-chirpy/_drafts
   - jekyll-theme-chirpy/_docs
+  - _tabs/tags.md
 
 
 compress_html:
