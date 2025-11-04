@@ -1,5 +1,7 @@
 ## 🧩 Chirpy Local Build and Deployment Flow
 
+This diagram summarizes how I got the **Chirpy Jekyll theme** working locally, debugged missing asset and SCSS issues, and deployed it successfully to **GitHub Pages** (and later to my custom domain [mitchellkain.com](https://mitchellkain.com)).
+
 ```mermaid
 flowchart TD
     A[Start: Clone Chirpy theme locally] --> B[Install Ruby and Bundler]
@@ -16,4 +18,4 @@ flowchart TD
     K --> L[Enable GitHub Pages in repository settings]
     L --> M[Site live at mkain112.github.io ✅]
     M --> N[Optional: map custom domain mitchellkain.com 🌐]
-
+```
