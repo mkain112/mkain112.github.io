@@ -3,7 +3,7 @@ title: Bert (Alberto) — The Autonomous Hovercraft
 description: Designed and built an autonomous hovercraft using nonlinear control, digital twin simulation, and onboard sensing. Bert won the class-wide competition in BU’s Motion Planning course and was later featured at the RASTIC inauguration.
 date: 2024-05-10 10:30:00
 categories: [Autonomous Hovercraft, Robotics]
-tags: [Path Planning, Controls, Lidar, Digital Twin, Embedded Systems, OnShape, CAD, 3D Printing]
+tags: [Path Planning, Controls, Lidar, Digital Twin, Embedded Systems, Onshape, CAD, 3D Printing]
 image:
   path: "/assets/Bert/digital_twin.png"
   alt: "Digital twin model of the autonomous hovercraft used for testing control algorithms."

@@ -35,7 +35,7 @@ plugins:
 #  Appearance & Layout
 # ============================================================
 
-theme_mode: dark # [light | dark] or leave empty for auto
+theme_mode: # [light | dark] or leave empty for auto
 avatar: "/assets/profile.jpg"
 social_preview_image:
 toc: true

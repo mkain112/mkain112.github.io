@@ -3,11 +3,11 @@ title: Soft Robotic Crawler — “Skippy”
 description: Designed and built a bio-inspired soft robot capable of crawling using pneumatically actuated legs with anisotropic friction pads. Developed in Boston University’s Soft Robotics Lab to explore morphological computation and adaptable locomotion.
 date: 2024-07-01 11:00:00
 categories: [Soft Robotic Crawler, Robotics]
-tags: [Silicone, Pneumatics, 3D Printing, Control Systems, Morphological Computation, Biomimicry, Research, Abaqus, CAD, OnShape]
+tags: [Silicone, Pneumatics, 3D Printing, Control Systems, Morphological Computation, Biomimicry, Research, Abaqus, CAD, Onshape]
 image:
   path: "/assets/soft_robot/CrawlerTMB.PNG"
   alt: "Skippy the soft robotic crawler (early prototype)— silicone legs with ski-skin feet mounted to a flexible spine."
-pin: true
+pin: false
 ---
 
 > **Boston University Soft Robotics Lab – ME568 Final Project**  

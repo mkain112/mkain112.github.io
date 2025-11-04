@@ -7,7 +7,7 @@ tags: [MATLAB, Onshape, Design, Controls, Rapid Prototyping, CAD, 3D Printing]
 image: 
   path: "/assets/guided_parachute/ConOps.png"
   alt: "Concept of Operations: Left shows normal parachute landings. Right shows our proposed guided landing using a steerable parachute."
-pin: true
+pin: false
 ---
 
 > **NASA Langley Aeronautics Academy – Research Project**  
