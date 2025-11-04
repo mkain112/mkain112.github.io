@@ -13,7 +13,7 @@ flowchart TD
     I -- Yes --> J[Commit and Push to GitHub]
     I -- No --> F
     J --> K[Configure GitHub Actions Workflow for Pages]
-    K --> L[Enable GitHub Pages (Settings → Pages)]
+    K --> L[Enable GitHub Pages (Settings to Pages)]
     L --> M[Site Live at mkain112.github.io ✅]
     M --> N[Optional: Map Custom Domain mitchellkain.com 🌐]
 
