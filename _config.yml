@@ -138,6 +138,7 @@ defaults:
 # ============================================================
 
 exclude:
+  - jekyll-theme-chirpy/_tabs/tags.md
   - .git
   - .github
   - Gemfile*
