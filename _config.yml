@@ -35,7 +35,7 @@ plugins:
 #  Appearance & Layout
 # ============================================================
 
-theme_mode: # [light | dark] or leave empty for auto
+theme_mode: dark # [light | dark] or leave empty for auto
 avatar: "/assets/profile.jpg"
 social_preview_image:
 toc: true
@@ -136,6 +136,8 @@ defaults:
 # ============================================================
 #  Exclusions (minimal — do not exclude theme assets)
 # ============================================================
+include:
+  - _includes/custom-head.html # Include custom HTML in <head>
 
 exclude:
   - jekyll-theme-chirpy/_tabs/tags.md
