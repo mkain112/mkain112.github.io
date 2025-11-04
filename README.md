@@ -10,7 +10,7 @@ graph TD;
     D --> E[Remove remote theme reference]
     E --> F[Clean _scss and assets/css overrides]
     F --> G[Add exclusions for example content]
-    G --> H[Run "bundle exec jekyll serve" locally]
+    G --> H[Run bundle exec jekyll serve locally]
     H --> I{Build successful?}
     I -- Yes --> J[Commit and push to GitHub]
     I -- No --> F
