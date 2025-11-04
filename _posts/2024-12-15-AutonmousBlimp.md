@@ -2,8 +2,8 @@
 title: Autonomous Blimp Independent Study
 description: Designed and built a controllable blimp testbed for testing new soft-robotic propulsion technologies at BU’s Morphable Bio-Robotics Lab. Collaborated with George Knight to develop a motion-capture–guided control system and a bistable magnetic jet propulsion concept for lighter-than-air vehicles.
 date: 2024-12-15 14:15:16
-categories: [Autonomous Blimp, Aerospace]
-tags: [MATLAB, Onshape, Design, Controls, Rapid Prototyping, ESP32, Motion Capture]
+categories: [Autonomous Blimp, Robotics]
+tags: [MATLAB, Onshape, Design, Controls, Rapid Prototyping, ESP32, Motion Capture, CAD]
 image:
   path: /assets/blimp/MitchnGeorgeTmb.PNG
   alt: "Mitch and George Knight (left) pose with an early autonomous blimp prototype."
