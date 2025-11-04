@@ -6,7 +6,7 @@ categories: [Soft Robotic Crawler, Robotics]
 tags: [Silicone, Pneumatics, 3D Printing, Control Systems, Morphological Computation, Biomimicry, Research, Abaqus, CAD, OnShape]
 image:
   path: "/assets/soft_robot/CrawlerTMB.PNG"
-  alt: "Skippy the soft robotic crawler — silicone legs with ski-skin feet mounted to a flexible spine."
+  alt: "Skippy the soft robotic crawler (early prototype)— silicone legs with ski-skin feet mounted to a flexible spine."
 pin: true
 ---
 
@@ -72,7 +72,6 @@ The design achieved a **40° bend at minimal pressure** and enough stiffness to 
 </table>
 
 ---
-
 ### Feet: Anisotropic Friction
 
 ![Crawler Rice](/assets/soft_robot/Crawler_Rice.png)
@@ -114,10 +113,13 @@ Testing included:
 _Single leg gripping a loaded cup until slip threshold._
 
 ![Crawler in Motion](/assets/soft_robot/Soft_Crawler.gif)
-_The full crawler demonstrating stable cyclic locomotion._
+_4 legged competition run for decreased turn radius_
 
 ![Competition Demo](/assets/soft_robot/Hype.gif)
-_Competition-ready run highlighting Skippy’s speed and stability._
+_Early testing of Skippy's movement modes_
+
+![Competition Demo](/assets/soft_robot/SpeedyCrawl2.gif)
+_Early testing of cyclic pressure limits_
 
 ---
 
