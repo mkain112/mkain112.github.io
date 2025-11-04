@@ -3,7 +3,7 @@
 This diagram summarizes how I got the **Chirpy Jekyll theme** working locally, debugged missing asset and SCSS issues, and deployed it successfully to **GitHub Pages** (and later to my custom domain [mitchellkain.com](https://mitchellkain.com)).
 
 ```mermaid
-flowchart TD
+graph TD
     A[Start: Clone Chirpy theme locally] --> B[Install Ruby and Bundler]
     B --> C[Add required gems: jekyll-feed, jekyll-seo-tag, etc.]
     C --> D[Set theme: jekyll-theme-chirpy in _config.yml]
@@ -60,7 +60,3 @@ flowchart TD
    - Wait for the workflow to finish — your site goes live!
 
 ---
-
-✅ **Notes**
-- Uses **quadruple backticks** in chat to preserve triple ones for GitHub rendering.
-- Paste directly into your `README.md` — GitHub will render the Mermaid flowchart automatically.
