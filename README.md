@@ -2,18 +2,18 @@
 
 ```mermaid
 flowchart TD
-    A[Start: Clone Chirpy Theme Locally] --> B[Install Ruby & Bundler]
-    B --> C[Add Required Gems: jekyll-feed, jekyll-seo-tag, etc.]
+    A[Start: Clone Chirpy theme locally] --> B[Install Ruby and Bundler]
+    B --> C[Add required gems: jekyll-feed, jekyll-seo-tag, etc.]
     C --> D[Set theme: jekyll-theme-chirpy in _config.yml]
-    D --> E[Remove Remote Theme Reference]
-    E --> F[Clean _scss and assets/css Overrides]
-    F --> G[Add Exclusions for Chirpy Example Content]
-    G --> H[Run bundle exec jekyll serve Locally]
-    H --> I{Build Succeeds?}
-    I -- Yes --> J[Commit and Push to GitHub]
+    D --> E[Remove remote theme reference]
+    E --> F[Clean _scss and assets/css overrides]
+    F --> G[Add exclusions for example content]
+    G --> H[Run "bundle exec jekyll serve" locally]
+    H --> I{Build successful?}
+    I -- Yes --> J[Commit and push to GitHub]
     I -- No --> F
-    J --> K[Configure GitHub Actions Workflow for Pages]
-    K --> L[Enable GitHub Pages (Settings to Pages)]
-    L --> M[Site Live at mkain112.github.io ✅]
-    M --> N[Optional: Map Custom Domain mitchellkain.com 🌐]
+    J --> K[Configure GitHub Actions workflow for Pages]
+    K --> L[Enable GitHub Pages in repository settings]
+    L --> M[Site live at mkain112.github.io ✅]
+    M --> N[Optional: map custom domain mitchellkain.com 🌐]
 
