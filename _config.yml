@@ -1,14 +1,29 @@
 # ============================================================
-#  The Site Configuration
+#  Site Info
 # ============================================================
 
-# Use the Chirpy theme via GitHub’s remote theme feature
-theme: null
-remote_theme: cotes2020/jekyll-theme-chirpy
+title: Mitch Kain
+tagline: Mechanical Engineer | Robotics and Rockets | Data Scientist | USMC Veteran
+description: >
+  An engineer who can calculate, code, model, prototype, and test — based in Brooklyn, NY.
 
-# Jekyll plugins required for Chirpy + GitHub Pages
+lang: en
+timezone: America/New_York
+
+url: "https://mitchellkain.com"
+baseurl: ""  # Root of domain
+
+# ============================================================
+#  Theme (LOCAL)
+# ============================================================
+
+theme: jekyll-theme-chirpy
+
+# ============================================================
+#  Plugins
+# ============================================================
+
 plugins:
-  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-archives
   - jekyll-seo-tag
@@ -16,22 +31,19 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# Language and timezone
-lang: en
-timezone: America/New_York
-
 # ============================================================
-#  Site Info and SEO
+#  Appearance & Layout
 # ============================================================
 
-title: Mitch Kain
-tagline: Mechanical Engineer | Robotics and Rockets | Data Scientist | USMC Veteran
-description: >-
-  An engineer who can calculate, code, model, prototype, and test — based in Brooklyn, NY.
+theme_mode: # [light | dark] or leave empty for auto
+avatar: "/assets/profile.jpg"
+social_preview_image:
+toc: true
+paginate: 10
 
-# Correct GitHub Pages URL (no trailing slash)
-url: "https://mkain112.github.io"
-baseurl: ""  # Empty since it’s hosted at the root (not /mkain112.github.io)
+# ============================================================
+#  Social Links
+# ============================================================
 
 github:
   username: mkain112
@@ -43,67 +55,19 @@ social:
     - https://github.com/mkain112
     - https://www.linkedin.com/in/mitchell-kain/
 
-webmaster_verifications:
-  google:
-  bing:
-  alexa:
-  yandex:
-  baidu:
-  facebook:
-
 # ============================================================
-#  Appearance and Functionality
-# ============================================================
-
-theme_mode: # [light | dark]
-avatar: "/assets/profile.jpg"
-social_preview_image:
-
-toc: true
-
-# ============================================================
-#  Comments and Analytics
+#  Comments / Analytics (optional)
 # ============================================================
 
 comments:
   provider:
-  disqus:
-    shortname:
-  utterances:
-    repo:
-    issue_term:
-  giscus:
-    repo:
-    repo_id:
-    category:
-    category_id:
-    mapping:
-    strict:
-    input_position:
-    lang:
-    reactions_enabled:
 
 analytics:
   google:
     id:
-  goatcounter:
-    id:
-  umami:
-    id:
-    domain:
-  matomo:
-    id:
-    domain:
-  cloudflare:
-    id:
-  fathom:
-    id:
-
-pageviews:
-  provider:
 
 # ============================================================
-#  Progressive Web App
+#  PWA
 # ============================================================
 
 pwa:
@@ -112,12 +76,11 @@ pwa:
     enabled: true
     deny_paths:
 
-paginate: 10
-
 # ============================================================
-#  Build Settings
+#  Markdown / Build
 # ============================================================
 
+markdown: kramdown
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
@@ -128,6 +91,22 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+
+sass:
+  style: compressed
+
+# ============================================================
+#  Archives / Collections
+# ============================================================
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
 
 collections:
   tabs:
@@ -154,8 +133,29 @@ defaults:
       layout: page
       permalink: /:title/
 
-sass:
-  style: compressed
+# ============================================================
+#  Exclusions (minimal — do not exclude theme assets)
+# ============================================================
+
+exclude:
+  - .git
+  - .github
+  - Gemfile*
+  - README.md
+  - LICENSE
+  - node_modules
+  - vendor
+  - package*.json
+  - "*.config.js"
+  - purgecss.js
+  - "*.gem"
+  - "*.gemspec"
+  # Exclude Chirpy’s built-in example content
+  - jekyll-theme-chirpy/_posts
+  - jekyll-theme-chirpy/_tabs
+  - jekyll-theme-chirpy/_drafts
+  - jekyll-theme-chirpy/_docs
+
 
 compress_html:
   clippings: all
@@ -166,23 +166,3 @@ compress_html:
   ignore:
     envs: [development]
 
-exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
-  - README.md
-  - LICENSE
-  - purgecss.js
-  - "*.config.js"
-  - "package*.json"
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
-    

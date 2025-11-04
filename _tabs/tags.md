@@ -1,6 +1,6 @@
 ---
 title: Tags
 icon: fas fa-tags
-order: 3
+order: 0
 redirect_to: /skills/
 ---

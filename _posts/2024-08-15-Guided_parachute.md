@@ -5,7 +5,7 @@ date: 2024-08-15 14:15:16
 categories: [NASA Guided Parachute, Aerospace]
 tags: [MATLAB, Onshape, Design, Controls, Rapid Prototyping]
 image: 
-  path: /assets/Guided parachute/ConOps.png
+  path: "/assets/guided_parachute/ConOps.png"
   alt: "Concept of Operations: Left shows normal parachute landings. Right shows our proposed guided landing using a steerable parachute."
 pin: true
 ---
@@ -60,7 +60,8 @@ As **Lead Research Associate** at NASA Langley’s Aerospace Academy, I worked w
 
 My main focus was the development of a **kinetic-energy-reduction device** for drones operating over populated areas. Over the course of just **eight weeks**, our team moved through every stage of development:  
 
-![Guided Parachute Demo](/assets/Guided parachute/ControlledGlide.gif){:.right} _RIGHT: A scaled prototype demonstrating controllable descent, steering right then left, and flaring behavior (executed too early)._
+![Guided Parachute Demo](assets/guided_parachute/ControlledGlide.gif){:.right}  
+_RIGHT: A scaled prototype demonstrating controllable descent, steering right then left, and flaring behavior (executed too early)._
 
 - Problem definition and requirements  
 - Concept research and trade studies  
@@ -105,7 +106,7 @@ In just eight weeks, we built a working proof-of-concept that combined **aerospa
 
 ### Full Technical Report
 
-<iframe src="/assets/Guided parachute/UAS survivabilty paper.pdf#toolbar=0" width="100%" height="600px"></iframe>
+<iframe src="/assets/guided_parachute/UAS_survivabilty_paper.pdf#toolbar=0" width="100%" height="600px"></iframe>
 
 [← Back to Projects](/projects)
 
