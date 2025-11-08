@@ -3,7 +3,7 @@ title: Chess-Playing Robot — CAD & Prototyping
 description: Early CAD models and mechanical design exploration for the autonomous chessboard project. Building out the frame, end effector, and first printed parts.
 date: 2025-05-29 15:00:00
 categories: [Chess Robot, CAD]
-tags: [Chess, CAD, Onshape, 3D Printing, CNC, Gantry, Robotics, Prototyping, Motion Control, Arduino, Raspberry Pi, Python, GRBL, Universal Gcode Sender, Gcode]
+tags: [Chess, CAD, Onshape, 3D Printing, CNC, Gantry, Robotics, Prototyping]
 image:
   path: "/assets/chess/2cad/gantry.png"
   alt: "Onshape render of the chess robot’s gantry frame over the chessboard."

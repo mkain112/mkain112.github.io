@@ -3,7 +3,7 @@ title: Chess-Playing Robot — Assembly & Prototyping
 description: Mechanical redesign and assembly of robot parts for the autonomous chessboard project. REAL HARDWARE! 
 date: 2025-06-29 15:00:00
 categories: [Chess Robot, Prototyping]
-tags: [Chess, CAD, Onshape, 3D Printing, CNC, Gantry, Robotics, Prototyping, Motion Control, Arduino, Raspberry Pi, Python, GRBL, Universal Gcode Sender, Gcode]
+tags: [Chess, CAD, Onshape, 3D Printing, CNC, Robotics, Prototyping]
 image:
   path: "/assets/chess/3hw/overhead_prototype.jpg"
   alt: "The Chess Robot prototype on my coffee table! (With a stand in for the end effector I made years ago)"
@@ -13,9 +13,7 @@ pin: false
 I've been busy applying for jobs and working on some other projects, but here's an update on the Chess Robot. Seems like things are getting a little busy! May not get to do these updates as often as I would like!
 
 > **Work in Progress — Assembly and Prototyping Stage**  
-> This post focuses on the assembly of the first **prototype parts** for the chess robot.  
->
-> The design is evolving quickly — stay tuned for end effectors.
+> This post focuses on the assembly of the first **prototype parts** for the chess robot.
 {: .prompt-tip}
 
 ## Design Goals
@@ -29,6 +27,8 @@ The goal for this iteration was to:
 ---
 
 ## Smooth Rail System
+
+Below are some pictures of the iterations of different components. I have a habit of writing on printed parts in marker where changes need to be made. This helps me visualize the changes, and makes sure I don't accidentally install the wrong version of a part. Sorry if some of my 'notes' sneak through in the pictures. 
 
 <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
   <figure style="flex:1; min-width:280px;">
@@ -50,7 +50,7 @@ The goal for this iteration was to:
 </div>
 
 
-I settled on an 8 mm rail system. Specifically 4 for the Y-axis (2 on each edge) and 2 on the X-axis. The pair of rails provides stability, which we will need for the end effector riding on a carriage. The mounting holes in the stepper motors, and therefore the smooth rail attachment fixtures that sit over the mounting screws are 31±0.2mm apart. Design details flowing from the constraints of the hardware, for now. If stability becomes an issue we can redesign and make them further apart. 
+I settled on an 8 mm rail system. Specifically 4 for the Y-axis (2 on each edge) and 2 on the X-axis. The pairs of rails provides stability, which we will need for the end effector riding on the X-axis carriage. The mounting holes in the stepper motors, and therefore the smooth rail attachment fixtures that sit over the mounting screws are 31±0.2mm apart. Design details flowing from the constraints of the hardware, for now. If stability becomes an issue we can redesign and make them further apart. 
 
 ### Major Components Assembled
 - **Linear rail system** 
