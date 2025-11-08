@@ -5,14 +5,15 @@ date: 2025-05-29 15:00:00
 categories: [Chess Robot, CAD]
 tags: [Chess, CAD, Onshape, 3D Printing, CNC, Gantry, Robotics, Prototyping, Motion Control, Arduino, Raspberry Pi, Python, GRBL, Universal Gcode Sender, Gcode]
 image:
-  path: "/assets/chess/gantry.png"
+  path: "/assets/chess/2cad/gantry.png"
   alt: "Onshape render of the chess robot’s gantry frame over the chessboard."
 pin: false
 ---
 
-> **Work in Progress — CAD & Prototype Stage**  
-> After finalizing the core concept, the next step was turning ideas into geometry. This post focuses on the **mechanical design** and first **prototype parts** for the chess robot.
+> **Work in Progress — CAD & Prototype Stage**
+> After finalizing the core concept, the next step was turning ideas into geometry. This post focuses on the mechanical design and first prototype parts for the chess robot.
 {: .prompt-tip}
+
 
 ## Design Goals
 
@@ -26,7 +27,7 @@ The goal for this iteration was to:
 
 ## Onshape CAD Development
 
-![Onshape Render](/assets/chess/board_dimensioned.png)
+![Onshape Render](/assets/chess/2cad/board_dimensioned.png)
 _Overview of the dimensions of a standard chessboard_
 
 All design work is being done in **Onshape**, which makes modeling and versioning easy between mechanical and electronics subsystems.  
@@ -38,9 +39,11 @@ All that said it would be cool if the board also used a normal chess clock. So, 
 
 ### Major Components Modeled
 - **Linear rail system** for X and Y motion  
-- **End effector** designed to hold a small electromagnet or gripper  
-- **Base plate and board alignment frame**  
-- **Electronics tray** for Pi Picos, drivers, and wiring
+  - **Motor Mount** holding the stepper motors in place
+  - **Idler Mount** providing a pivot point for the belt dirve
+  - **Y-Axis Carriage** a Carriage to slide up and down the Y-axis that the X-axis will ride on
+- **End effector Carriage** designed to hold a small electromagnet or gripper  
+- **Rail Supports and Alignment Brackets** to hold the rails high enough off the playing surface and to connect them to the wooden board surface
 
 ---
 
@@ -50,11 +53,11 @@ The separation for the linear rails was determined by the mounting holes in a st
 
 <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
   <figure style="flex:1; min-width:280px;">
-    <img src="/assets/chess/stepperANDmount.png" alt="Motor Mount Render" width="100%">
+    <img src="/assets/chess/2cad/stepperANDmount.png" alt="Motor Mount Render" width="100%">
     <figcaption><em>Render of a stepper motor <br>and its modular mount</em></figcaption>
   </figure>
   <figure style="flex:1; min-width:280px;">
-    <img src="/assets/chess/stepper_data.jpg" alt="Stepper Online Data Sheet" width="100%">
+    <img src="/assets/chess/2cad/stepper_data.jpg" alt="Stepper Online Data Sheet" width="100%">
     <figcaption><em>StepperOnline Data Sheet</em></figcaption>
   </figure>
 </div>
@@ -71,7 +74,7 @@ The focus was on validating:
 - Belt tensioning geometry on the 8mm smooth rods 
 - Endstop and sensor mounting points  
 
-![Prototype Parts](/assets/chess/first_printed_parts.png)
+![Prototype Parts](/assets/chess/2cad/first_printed_parts.png)
 _First batch of printed parts — carriage and motor mounts, pully idler, and frame brackets test half_
 
 ---

@@ -5,7 +5,7 @@ date: 2025-05-15 14:00:00
 categories: [Chess Robot, Design]
 tags: [Chess, Embedded Systems, Motion Control, Sensors, Electronics, Arduino, CNC, ROS2, GRBL, CAD, Onshape, 3D Printing, Raspberry Pi]
 image:
-  path: "/assets/chess/chessbot_theory.png"
+  path: "/assets/chess/1design/chessbot_theory.png"
   alt: "Preliminary concept render of the chess robot showing the gantry and board layout."
 pin: false
 ---
@@ -22,12 +22,12 @@ And I love chess. **But I'm not very good.**
 
 The goal here is to build a **fully autonomous chessboard** that can detect where every piece is and move them using an **XY gantry**, much like a compact CNC machine. 
 
-![PPCC Logo](/assets/chess/ppcc.png){: .left}
+![PPCC Logo](/assets/chess/1design/ppcc.png){: .left}
 **And win games against my friends that I cant beat.**
 For a full an comprehensive look at all the friends I can't beat check out [Prospect Park Chess Club](https://www.prospectparkchessclub.com) another of my projects.
 
 
-![Concept Sketch](/assets/chess/Stockfish-logo.png){: .right}
+![Concept Sketch](/assets/chess/1design/Stockfish-logo.png){: .right}
 Pieces will be embedded with RFID tags or small magnets, and the board will use **reed switches or Hall sensors** arranged in an 8×8 grid to detect their presence.  
 The robot will handle everything from opening moves to checkmates — with the human opponent just sitting back and watching the system beat them. Probably with Stockfish.
 
