@@ -1,0 +1,172 @@
+# ============================================================
+#  Site Info
+# ============================================================
+
+title: Mitch Kain
+tagline: Mechanical Engineer | Robotics and Rockets | Data Scientist | USMC Veteran
+description: >
+  An engineer who can calculate, code, model, prototype, and test — based in Brooklyn, NY.
+
+lang: en
+timezone: America/New_York
+
+url: "https://mitchellkain.com"
+baseurl: ""  # Root of domain
+
+# ============================================================
+#  Theme (LOCAL)
+# ============================================================
+
+theme: jekyll-theme-chirpy
+
+# ============================================================
+#  Plugins
+# ============================================================
+
+plugins:
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+# ============================================================
+#  Appearance & Layout
+# ============================================================
+
+theme_mode: # [light | dark] or leave empty for auto
+avatar: "/assets/profile.jpg"
+social_preview_image:
+toc: true
+paginate: 10
+
+# ============================================================
+#  Social Links
+# ============================================================
+
+github:
+  username: mkain112
+
+social:
+  name: "Mitch Kain"
+  email: mitchell.kain@gmail.com
+  links:
+    - https://github.com/mkain112
+    - https://www.linkedin.com/in/mitchell-kain/
+
+# ============================================================
+#  Comments / Analytics (optional)
+# ============================================================
+
+comments:
+  provider:
+
+analytics:
+  google:
+    id:
+
+# ============================================================
+#  PWA
+# ============================================================
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+# ============================================================
+#  Markdown / Build
+# ============================================================
+
+markdown: kramdown
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+sass:
+  style: compressed
+
+# ============================================================
+#  Archives / Collections
+# ============================================================
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+# ============================================================
+#  Exclusions (minimal — do not exclude theme assets)
+# ============================================================
+include:
+  - _includes/custom-head.html # Include custom HTML in <head>
+
+exclude:
+  - jekyll-theme-chirpy/_tabs/tags.md
+  - .git
+  - .github
+  - Gemfile*
+  - README.md
+  - LICENSE
+  - node_modules
+  - vendor
+  - package*.json
+  - "*.config.js"
+  - purgecss.js
+  - "*.gem"
+  - "*.gemspec"
+  # Exclude Chirpy’s built-in example content
+  - jekyll-theme-chirpy/_posts
+  - jekyll-theme-chirpy/_tabs
+  - jekyll-theme-chirpy/_drafts
+  - jekyll-theme-chirpy/_docs
+  - _tabs/tags.md
+
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+

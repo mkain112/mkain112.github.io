@@ -1,0 +1,43 @@
+#  The contact options.
+
+- type: github
+  icon: "fab fa-github"
+  url: "https://github.com/mkain112"
+
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/mitchell-kain/"
+
+- type: email
+  icon: "fas fa-envelope"
+  url: "mailto:mitchell.kain@gmail.com"
+  noblank: true # open link in current tab
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
+
+# Optional additional links
+# - type: mastodon
+#   icon: "fab fa-mastodon"
+#   url: ""
+#
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
+#   url: ""
+#
+# - type: stack-overflow
+#   icon: "fab fa-stack-overflow"
+#   url: ""
+#
+# - type: bluesky
+#   icon: "fa-brands fa-bluesky"
+#   url: ""
+#
+# - type: reddit
+#   icon: "fa-brands fa-reddit"
+#   url: ""
+#
+# - type: threads
+#   icon: "fa-brands fa-threads"
+#   url: ""
