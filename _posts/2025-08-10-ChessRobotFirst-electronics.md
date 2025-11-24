@@ -3,7 +3,7 @@ title: Chess-Playing Robot — Basic Electronics
 description: First electronics shakedown! Getting basic CNC functionality up and running.
 date: 2025-08-22 15:42:14
 categories: [Chess Robot, Electronics]
-tags: [Chess, Sensors, Electronics, Arduino, CNC,  GRBL, Gcode, Universal Gcode Sender, CAD, Onshape, 3D Printing]
+tags: [Chess, Sensors, Electronics, Arduino, CNC, GRBL, Gcode, Universal Gcode Sender, CAD, Onshape, 3D Printing]
 image:
   path: "/assets/chess/4elec/googlydemo_cropped.gif"
   alt: "THE GOOGLY EYES ARE EVERYTHING"

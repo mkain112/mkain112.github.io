@@ -3,7 +3,7 @@ title: Chess-Playing Robot — Assembly & Prototyping
 description: Mechanical redesign and assembly of robot parts for the autonomous chessboard project. REAL HARDWARE! 
 date: 2025-06-29 15:00:00
 categories: [Chess Robot, Prototyping]
-tags: [Chess, CAD, Onshape, 3D Printing, CNC, Robotics, Prototyping]
+tags: [Chess, CAD, Onshape, 3D Printing, CNC, Robotics, Prototyping, Hand tools]
 image:
   path: "/assets/chess/3hw/overhead_prototype.jpg"
   alt: "The Chess Robot prototype on my coffee table! (With a stand in for the end effector I made years ago)"

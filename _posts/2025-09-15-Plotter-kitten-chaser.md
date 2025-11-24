@@ -1,9 +1,9 @@
 ---
-title: Plotter / Kitten Chaser
+title: Chess-Playing Robot — Plotter / Kitten Chaser
 description: Turning the chess-robot gantry into a fast, reliable pen plotter (and accidental kitten treadmill). Modeled a servo-lift pen head, added dual Y-axis steppers, and used Universal G-code Sender to draw on a whiteboard.
 date: 2025-09-15 12:00:00
 categories: [Chess Robot, Plotter]
-tags: [CNC, Plotter, 3D Printing, Servo, Stepper Motors, GRBL, Universal Gcode Sender, Robotics, Prototyping, Cats]
+tags: [CNC, Plotter, 3D Printing, Servos, Stepper Motors, GRBL, Universal Gcode Sender, Robotics, Prototyping, Cats]
 image:
   path: "/assets/chess/5plot/cleanppcc.gif"
   alt: "Pen plotter prototype drawing on a whiteboard while my kitten supervises."

@@ -3,7 +3,7 @@ title: Chess-Playing Robot — Concept & Design
 description: Concept for a fully automated chessboard that can detect and move pieces using an XY gantry and sensors. The project combines mechanical design, embedded control, and maybe a bit of AI for game logic.
 date: 2025-05-15 14:00:00
 categories: [Chess Robot, Design]
-tags: [Chess, Embedded Systems, Motion Control, Sensors, Electronics, Arduino, CNC, ROS2, GRBL, CAD, Onshape, 3D Printing, Raspberry Pi]
+tags: [Chess, Robotics, Embedded Systems, Motion Control, Sensors, Electronics, Arduino, CNC, ROS2, GRBL, CAD, Onshape, 3D Printing, Raspberry Pi, python]
 image:
   path: "/assets/chess/1design/chessbot_theory.png"
   alt: "Preliminary concept render of the chess robot showing the gantry and board layout."
