@@ -7,15 +7,15 @@ order: 1
 {: .prompt-tip }
 
 ![Mitch Chess](/assets/mitch_chess.jpg){: .left}
-Hello! Thanks for stopping by! I'm Mitch Kain, a Mechanical engineer, recovering Data Scientist, and USMC Vet.
+Hello! Thanks for stopping by! I'm Mitch Kain, a Mechanical Engineer, recovering Data Scientist, and USMC Vet.
 
 I'm a recent Mechanical Engineering M.S. graduate specializing in Dynamics Systems and Control, with hands-on experience in CAD, product design, SolidWorks, OnShape, MATLAB, and simulation. 
 
 I am an Engineer who can calculate, code, model, prototype, and test. I bring curiosity, grit, and results.
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/mitchell-kain/)
+Connect with me on [LinkedIn](https://www.linkedin.com/in/mitchell-kain/).
 
-The idea is to have a fun ongoing project website where I can try things out and show everyone what I'm working on, while staying comfortable with Git, and learning new skills while also helping in the job hunt. Nothing fancy, just a static site hosted on GitHub with a Jekyll theme.
+The idea is to have a fun, ongoing project website where I can try things out and show everyone what I'm working on, while staying comfortable with Git and learning new skills to help in my job hunt. Nothing fancy, just a static site hosted on GitHub with a Jekyll theme.
 
 
 ### Resume

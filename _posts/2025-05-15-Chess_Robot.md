@@ -6,7 +6,7 @@ categories: [Chess Robot, Design]
 tags: [Chess, Robotics, Embedded Systems, Motion Control, Sensors, Electronics, Arduino, CNC, ROS2, GRBL, CAD, Onshape, 3D Printing, Raspberry Pi, python]
 image:
   path: "/assets/chess/1design/chessbot_theory.png"
-  alt: "Preliminary concept render of the chess robot showing the gantry and board layout."
+  alt: "Preliminary concept render of the chess robot showing the gantry and board layout"
 pin: false
 ---
 
@@ -23,13 +23,13 @@ And I love chess. **But I'm not very good.**
 The goal here is to build a **fully autonomous chessboard** that can detect where every piece is and move them using an **XY gantry**, much like a compact CNC machine. 
 
 ![PPCC Logo](/assets/chess/1design/ppcc.png){: .left}
-**And win games against my friends that I cant beat.**
-For a full an comprehensive look at all the friends I can't beat check out [Prospect Park Chess Club](https://www.prospectparkchessclub.com) another of my projects.
+**And win games against my friends that I can't beat.**
+For a full and comprehensive look at all the friends I can't beat, check out [Prospect Park Chess Club](https://www.prospectparkchessclub.com), another of my projects.
 
 
 ![Concept Sketch](/assets/chess/1design/Stockfish-logo.png){: .right}
 Pieces will be embedded with RFID tags or small magnets, and the board will use **reed switches or Hall sensors** arranged in an 8×8 grid to detect their presence.  
-The robot will handle everything from opening moves to checkmates — with the human opponent just sitting back and watching the system beat them. Probably with Stockfish.
+The robot will handle everything from opening moves to checkmates — while the human opponent watches the system beat them. Probably with [Stockfish](https://stockfishchess.org/).
 
 ---
 
@@ -47,9 +47,9 @@ The robot will handle everything from opening moves to checkmates — with the h
 ## Design Overview
 
 ![Abandoned attempt to train a tortoise to play chess](/assets/chess/1design/IMAG02802.jpg){: .right}
-Since I was forced to abandon my attempts to train a tortoise to play chess, I will have to build a robot instead, since my cats are not interested.
+Since I was forced to abandon my attempts to train a tortoise to play chess and my cats are not interested, I will have to build a robot instead.
 
-The robot will use a **CNC-style XY gantry** with an end effector that slides over the board surface. Each square will be equipped with some kind of sensor, wired in a matrix or multiplexed configuration to minimize pin count. Currently investigating the pros and cons of reed switches RFID tags and hall effect sensors. I may also revisit my chess computer vision algorithm, but we'll call that a stretch goal (as is the post about it).
+The robot will use a **CNC-style XY gantry** with an end effector that slides over the board surface. Each square will be equipped with some kind of sensor, wired in a matrix or multiplexed configuration to minimize pin count. Currently investigating the pros and cons of reed switches RFID tags and Hall effect sensors. I may also revisit my chess computer vision algorithm, but we'll call that a stretch goal (as is the post about it).
 
 ## Sensor Comparison: Reed vs. RFID vs. Hall Effect
 
@@ -86,11 +86,11 @@ The plan is to modularize it so that we can test the various different sensors. 
 
 ## Inspiration
 
-Commercial products like **DGT Boards** and open-source builds have proven the concept, but I want something more *engineering-first*: a platform that’s not only fun but also extensible for research in **localization, path planning, and human-robot interaction**.
+Commercial products like **DGT Boards** have proven the concept, but I want something *open-source:* a platform that’s not only fun but also extensible for research in **localization, path planning, and human-robot interaction**.
 
 The mechanical side — building a precise but affordable gantry — is just as interesting as the software. I’m borrowing techniques from **CNC design**, **3D printer kinematics**, and my experience with **motion planning** to make the movement smooth and deterministic.
 
-I also run one of the largest chess clubs in Brooklyn [as mentioned above](https://www.prospectparkchessclub.com), and it would be cool to be the only one with a chess robot.
+I also run one of the largest chess clubs in Brooklyn [as mentioned above](https://www.prospectparkchessclub.com), and it would be cool to be the only club with a chess robot.
 
 ---
 
@@ -120,7 +120,6 @@ Right now, the focus is on:
 > - Explore ROS2 interface for motion planning and visualization  
 
 Future posts will go into the details — electronics, wiring diagrams, PCB layout, and control firmware.  
-For now, Bert has some company in the workshop.
 
 
 [← Back to Projects](/projects)

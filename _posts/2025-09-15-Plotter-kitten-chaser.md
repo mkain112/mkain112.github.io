@@ -1,6 +1,6 @@
 ---
 title: Chess-Playing Robot — Plotter / Kitten Chaser
-description: Turning the chess-robot gantry into a fast, reliable pen plotter (and accidental kitten treadmill). Modeled a servo-lift pen head, added dual Y-axis steppers, and used Universal G-code Sender to draw on a whiteboard.
+description: Turning the chess-robot gantry into a fast, reliable pen plotter (and accidental kitten magnet). Modeled a servo-lift pen head, added dual Y-axis steppers, and used Universal G-code Sender to draw on a whiteboard.
 date: 2025-09-15 12:00:00
 categories: [Chess Robot, Plotter]
 tags: [CNC, Plotter, 3D Printing, Servos, Stepper Motors, GRBL, Universal Gcode Sender, Robotics, Prototyping, Cats]
@@ -14,13 +14,13 @@ pin: true
 > This post focuses on converting the chess-robot gantry into a working pen plotter, modeling a servo-lift pen head, adding a second Y-axis motor for rigidity, and running my first drawings through Universal G-code Sender.
 {: .prompt-tip}
 
-I've been bouncing between job applications and random engineering distractions, but this one was actually *planned*. There is likely some forthcoming posts about those side quests though. Stay tuned. 
+I've been bouncing between job applications and random engineering distractions, but this one was actually *planned*. There are likely some forthcoming posts about those side quests though. Stay tuned. 
 
 I needed something fun to keep me motivated while the chess robot inches toward full functionality — so I decided to turn the gantry into a **pen plotter**. It seemed like a good way to shake down the mechanics and electronics of the system and move forward in incremental steps. 
 
-Plus now when its not playing chess or being disassembled, it can draw me pretty pictures. Which is nice.
+Plus, now when it's not playing chess or being disassembled, it can draw me pretty pictures. Which is nice.
 
-And since my kitten believes anything that moves is a toy, its now a nascent chessbot, a plotter, *and* a cat chaser. Super practical. 
+And since my kitten believes anything that moves is a toy, it's now a nascent chessbot, a plotter, *and* a cat chaser. Super practical. 
 
 ---
 
@@ -33,13 +33,13 @@ I modeled a simple **servo-driven pen lift** in Onshape — nothing fancy, just 
 
 It gives me about **12 mm** of vertical travel, which is plenty for lifting a marker off a whiteboard.
 
-The biggest problem with the plotter is the vertical distance from the X-axis to the writing surface. It should be as small as possible, not designed to clear 4 inch-tall Kings. This induces some error/wobble due to lack of perfect rigidity. Long pieces of plastic bend easier. 
+The biggest problem with the plotter is the vertical distance from the X-axis to the writing surface. It should be as small as possible, not designed to clear 4-inch tall kings. This induces some error/wobble due to lack of perfect rigidity. Long pieces of plastic bend easier. 
 
 ---
 
 ## Dual Y-Axis Steppers
 
-One Y-axis motor was fine for slow calibration — but as soon as I asked for plotter-level speeds, the frame flexed. Even with bearings there was too much friction on the non-driven side to remain square and flat.
+One Y-axis motor was fine for slow calibration — but as soon as I asked for plotter-level speeds, the frame flexed. Even with bearings, there was too much friction on the non-driven side to remain square and flat.
 
 So I cloned the Y-axis driver signals and added a second motor on the opposite side.
 Now both sides move in perfect sync — faster, smoother, and no more racking. This was really easy with the CNC Shield. I just added a jumper to duplicate an axis and added another A4988 Stepper Motor Driver. Done. As long as the belts are tightened correctly they move perfectly in sync. 
@@ -50,9 +50,9 @@ Results:
 - No racking  
 - No twisting  
 - Much smoother acceleration  
-- Also, it looks cool, and that counts too
+- Also, it looks cool
 
-I think this is the right move for the chess robot long-term anyway; the end effector is going to get heavier, not lighter, and it makes sense that the Y-axis needs a little help. Its moving the entire X-axis along with the X-carriage and whatever gets mounted to it. The X-axis just has to move the X-carriage. Which isn't heavy. at least not yet. 
+I think this is the right move for the chess robot long-term anyway; the end effector is going to get heavier, not lighter, and it makes sense that the Y-axis needs a little help. It's moving the entire X-axis along with the X-carriage and whatever gets mounted to it. The X-axis just has to move the X-carriage. Which isn't heavy... at least not yet. 
 
 ---
 
@@ -90,10 +90,8 @@ It’s simple, but it let me tune speed, acceleration, backlash, and servo timin
 
 ![Kitten Chaser](/assets/chess/5plot/KittenPlotterCartoon.png)
 
-At some point I stopped pretending this was about calibration.
-
-The moving pen became:
-- enrichment  
+To Taborlin the Great (the kitten), the moving pen became:
+- THE BEST TOY EVER  
 - cardio  
 - distraction  
 - chaos generator  
@@ -102,7 +100,7 @@ He’s now fully convinced CNC motion is a personal invitation to sprint at the 
 
 I’m calling this a biologically-inspired dynamic obstacle-avoidance test.
 
-Once I get the joystick setup I'll get a video of it chasing him around the board. I was too concerned about him eating the **Electric Spaghetti** or getting stuck in a belt to do much other than scoop him off with the machine running a preset program.
+Once I get the joystick setup I'll get a video of it chasing him around the board. I was too concerned about him eating the belts and chewing on the **Electric Spaghetti&trade;** ...or getting stuck in a belt to do much other than scoop him off with the machine running a preset program.
 
 > Note to self: install kill switch.  
 {: .prompt-danger}
@@ -111,9 +109,9 @@ Once I get the joystick setup I'll get a video of it chasing him around the boar
 
 ## Lessons Learned
 
-> - Dual-Y motors are absolutely the correct choice.  
-> - Dry-erase markers make great plotter tools.  
-> - Kittens should not be allowed to near moving belts.  
+> - Dual-Y motors are absolutely the correct choice 
+> - Dry-erase markers make great plotter tools
+> - Kittens should not be allowed near moving belts 
 {: .prompt-info}
 
 ---
@@ -135,7 +133,7 @@ Borrowed directly from the last post to maintain continuity — and updated:
 - [ ] Add cable-chain mounts + strain relief  
 
 ### **Electronics & Sensors**
-- [ ] Hall-effect sensors experimentation(current front runner)
+- [ ] Hall-effect sensors experimentation (current front runner)
   - [ ] Add hall-effect test board 
   - [ ] Bench-test
 - [ ] RFID sensors experimentation
@@ -152,7 +150,7 @@ Borrowed directly from the last post to maintain continuity — and updated:
 
 ### **Stretch Goals**
 - [ ] Camera-based calibration/piece ID  
-- [ ] “Do not pet the robot” kitten-proofing cover
+- [ ] “Do not fight the robot” kitten-proofing cover
 
 ## **For Next Post** 
 - [ ] Integrate to run on Raspberry Pi

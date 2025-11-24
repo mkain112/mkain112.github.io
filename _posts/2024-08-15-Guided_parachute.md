@@ -1,6 +1,6 @@
 ---
 title: NASA Guided Parachute
-description: NASA Guided Parachute — Designed and tested a steerable parachute system to reduce the impact energy of failed drones over populated areas. Led a team of 12 engineers at NASA Langley Research Center to prototype a controllable Rogallo-wing design capable of guided descent and soft landing.
+description: NASA Guided Parachute — Designed and tested a steerable parachute system to reduce the impact energy of failed drones over populated areas. Led a team of 12 engineering students at NASA Langley Research Center to prototype a controllable Rogallo-wing design capable of guided descent and soft landing.
 date: 2024-08-15 14:15:16
 categories: [NASA Guided Parachute, Aerospace]
 tags: [MATLAB, Onshape, Design, Controls, Rapid Prototyping, CAD, 3D Printing, Video Analysis]

@@ -55,8 +55,7 @@ George focused on modeling, simulation, and developing the nonlinear control alg
 
 Over the course of the semester, we designed, built, and tested multiple prototypes, iterating quickly between CAD, fabrication, and flight trials.
 
-![Autonomous Blimp Concept](/assets/blimp/concept.png){:.right}  
-*A concept render showing control architecture and sensor feedback flow.*
+![Autonomous Blimp Concept](/assets/blimp/concept.png)_A concept render showing control architecture and sensor feedback flow_
 
 - Concept generation and trade studies  
 - CAD modeling and material testing  
@@ -72,7 +71,7 @@ A global reference frame provided by RASTIC’s **optical motion capture system*
 
 This setup enabled us to test various control strategies — **PID**, **LQR**, and **Model Predictive Control (MPC)** — without relying on onboard sensors or heavy computing hardware.
 
-![Desktop View](/assets/blimp/Inflated.png) _Inflated Test Blimp, Checking for leaks_
+![Desktop View](/assets/blimp/Inflated.png) _Inflated test blimp, checking for leaks_
 
 ---
 
@@ -86,7 +85,7 @@ This would make the blimp the **first demonstration of a bistable magnetic propu
 ### Research Papers
 
 Below are the full technical reports produced as part of the study:  
-(George’s paper focuses on dynamics and control; mine on design, construction, and experimental methods.)
+(George’s paper (right) focuses on dynamics and control; mine on design, construction, and experimental methods. We collaborated on both, but someone had to write-up both parts.)
 
 <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
   <embed src="/assets/blimp/Independent_Study.pdf#toolbar=0" type="application/pdf" width="48%" height="600px">

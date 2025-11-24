@@ -1,12 +1,12 @@
 ---
-title: Bert (Alberto) — The Autonomous Hovercraft
+title: Bert — The Autonomous Hovercraft
 description: Designed and built an autonomous hovercraft using nonlinear control, digital twin simulation, and onboard sensing. Bert won the class-wide competition in BU’s Motion Planning course and was later featured at the RASTIC inauguration.
 date: 2024-05-10 10:30:00
 categories: [Autonomous Hovercraft, Robotics]
 tags: [Path Planning, Controls, LIDAR, Digital Twin, Embedded Systems, Onshape, CAD, 3D Printing, MATLAB, python]
 image:
   path: "/assets/Bert/digital_twin.png"
-  alt: "Digital twin model of the autonomous hovercraft used for testing control algorithms."
+  alt: "Digital twin model of the autonomous hovercraft used for testing control algorithms"
 pin: false
 ---
 > **Boston University – ME461: Motion Planning**  
@@ -21,8 +21,6 @@ pin: false
 **Bert** is an autonomous hovercraft designed and built from scratch as part of the graduate-level course **ME461: Motion Planning** at Boston University.  
 The project integrated **nonlinear control, path planning, and state estimation** into a fully functional system capable of following waypoints and adapting to sensor feedback.
 
-![Hovercraft Natural Habitat](/assets/Bert/natural_habitat.png)
-_Bert in his “natural habitat” — a low-friction test surface in the BU Robotics Lab._
 
 ---
 
@@ -43,7 +41,7 @@ _Bert in his “natural habitat” — a low-friction test surface in the BU Rob
 Bert’s behavior follows the classic **OODA Loop** (Observe → Orient → Decide → Act), adapted from aviation decision theory to robotics.
 
 ![OODA Loop](/assets/Bert/OODA_loop.png)
-_Observe–Orient–Decide–Act loop implemented as Bert’s high-level control architecture._
+_Observe–Orient–Decide–Act loop implemented as Bert’s high-level control architecture_
 
 The hovercraft’s challenge was **underactuation** — four control inputs (two thrusts, two vane angles) but only three degrees of freedom.  
 This required solving a nonlinear, underdetermined system of equations in real time.
@@ -57,11 +55,11 @@ Bert’s navigation relied on a combination of **LiDAR** and **IMU** data.
 <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
   <figure style="flex:1; min-width:280px;">
     <img src="/assets/Bert/lidar_room.png" alt="Lidar Scan Room" width="100%">
-    <figcaption><em>LiDAR mapping of a room during initial scanning.</em></figcaption>
+    <figcaption><em>LiDAR mapping of a room during initial scanning</em></figcaption>
   </figure>
   <figure style="flex:1; min-width:280px;">
     <img src="/assets/Bert/Lidar_hall.png" alt="Lidar Scan Hallway" width="100%">
-    <figcaption><em>LiDAR scan of hallway environment used for navigation testing.</em></figcaption>
+    <figcaption><em>LiDAR scan of hallway environment used for navigation testing</em></figcaption>
   </figure>
 </div>
 
@@ -73,11 +71,11 @@ To compensate for **rolling-shutter LiDAR delay**, Bert used **gradient descent 
 ## Path Planning and Control
 
 Path planning was implemented through a **quadratic potential field planner** in a six-dimensional state space  
-\((x, y, \theta, \dot{x}, \dot{y}, \dot{\theta})\).  
+$$ \((x, y, \theta, \dot{x}, \dot{y}, \dot{\theta})\).  
 The planner’s goal was to minimize both **positional error** and **energy expenditure**, balancing efficiency and stability.
 
 ![Bert Dynamics](/assets/Bert/bert_dynamics.png)
-_Free-body diagram of Bert showing dual-fan thrust and control vane configuration._
+_Free-body diagram of Bert showing dual-fan thrust and control vane configuration_
 
 The system originally solved for control inputs using **gradient descent**, but was later reformulated using the **Jacobian matrix** with an added **energy-efficiency constraint** as a fourth equation, producing a stable, well-conditioned solution.
 
@@ -86,7 +84,7 @@ The system originally solved for control inputs using **gradient descent**, but 
 ## Simulation and Digital Twin
 
 ![Digital Twin](/assets/Bert/digital_twin.png)
-_MATLAB-based digital twin used for closed-loop simulation and controls validation._
+_MATLAB-based digital twin used for closed-loop simulation and controls validation_
 
 A detailed **digital twin** of Bert was built in MATLAB/Simulink to test controllers before deploying them to hardware.  
 This virtual model simulated thrust, drag, noise, and LiDAR inputs, allowing rapid iteration on the control architecture.
@@ -103,10 +101,10 @@ The physical hovercraft included:
 - Custom 3D-printed mounts and skirt system  
 
 ![Control Vanes](/assets/Bert/control_vains.png)
-_Control vane assembly providing independent yaw and translation control._
+_Control vane assembly providing independent yaw and translation control_
 
 ![Hardware in Loop](/assets/Bert/hardwearInLoop.gif)
-_Hardware-in-the-loop test of an early Bert prototype running simulated trajectory tracking._
+_Hardware-in-the-loop test of an early Bert prototype running simulated trajectory tracking_
 
 ---
 
@@ -116,7 +114,7 @@ Bert’s control framework successfully allowed stable navigation through simula
 The control strategy proved robust against noise and underactuation.
 
 ![Natural Habitat](/assets/Bert/natural_habitat.png)
-_Field test setup demonstrating full thrust and vane control._
+_Bert in his “natural habitat” — a hallway_
 
 Bert’s system achieved the **highest performance score** among over 40 submissions and was later featured during the **BU RASTIC inauguration**, representing student-led innovation in autonomous systems.
 

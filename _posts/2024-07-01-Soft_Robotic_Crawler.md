@@ -6,7 +6,7 @@ categories: [Soft Robotic Crawler, Robotics]
 tags: [Silicone, Pneumatics, 3D Printing, Control Systems, Morphological Computation, Biomimicry, Research, Abaqus, CAD, Onshape, python, MATLAB]
 image:
   path: "/assets/soft_robot/CrawlerTMB.PNG"
-  alt: "Skippy the soft robotic crawler (early prototype)— silicone legs with ski-skin feet mounted to a flexible spine."
+  alt: "Skippy the soft robotic crawler (early prototype)— silicone legs with ski-skin feet mounted to a flexible spine"
 pin: false
 ---
 
@@ -22,7 +22,7 @@ pin: false
 The design draws inspiration from cockroach and turtle locomotion, where forward motion is achieved not by precision control, but by **morphological computation** — allowing the robot’s body and materials to do the thinking.
 
 
-_Birds-eye view of Skippy showing the modular spine and paired leg actuators, And temporary fiber wrap support_
+_Right: Bird's-eye view of Skippy showing the modular spine and paired leg actuators, And temporary fiber wrap support_
 
 ---
 
@@ -44,7 +44,7 @@ Skippy’s design began with an analysis of cockroach locomotion studies, which 
 By using compliant silicone legs with friction-differentiated feet, Skippy “swims” across land like a small turtle or lizard.
 
 Each leg’s shape and channel geometry were **parameterized in CAD (OnShape)** for rapid iteration, enabling redesigns for different terrains or gait experiments.
-![ConOps](/assets/soft_robot/explainer_slide.png)
+![explainer](/assets/soft_robot/explainer_slide.png)
 
 
 ---
@@ -66,7 +66,7 @@ The design achieved a **40° bend at minimal pressure** and enough stiffness to 
     </td>
     <td style="width:50%; text-align:center;">
       <img src="/assets/soft_robot/Bending_Leg.gif" alt="Bending Leg" width="100%"><br>
-      <em>Short clip demonstrating a single leg’s full actuation cycle.</em>
+      <em>Short clip demonstrating a single leg’s full actuation cycle</em>
     </td>
   </tr>
 </table>
@@ -85,7 +85,7 @@ This yielded a measured friction ratio of **μₗ/μₛ = 4.7**, enabling smooth
 ### Spine and Vertebra
 
 ![Bendy Spine](/assets/soft_robot/Bendy_spine.jpeg)
-_Flexible PLA spine with 3D printed vertebrae for modular leg placement._
+_Flexible PLA spine with 3D printed vertebrae for modular leg placement_
 
 The crawler’s body used a **repurposed shipping strap** as the flexible spine—rigid in one axis and compliant in another.  
 The vertebrae could slide or be replaced to tune gait spacing for terrain adaptation.
@@ -95,7 +95,7 @@ The vertebrae could slide or be replaced to tune gait spacing for terrain adapta
 ## Simulation and Modeling
 
 ![Abaqus Simulation](/assets/soft_robot/Abaqus_leg.PNG)
-_Abaqus finite-element simulation showing leg deformation under pressure._
+_Abaqus finite-element simulation showing leg deformation under pressure_
 
 A **finite-element model in Abaqus** validated the pneumatic chamber geometry and predicted stress accumulation at channel corners.  
 Material properties were modeled using **Yeoh hyperelastic coefficients** for large deformations.
@@ -110,10 +110,10 @@ Testing included:
 - **Grip test** – each leg held 0.86 N before slipping (see below)
 
 ![Grip Test](/assets/soft_robot/grip.png)
-_Single leg gripping a loaded cup until slip threshold._
+_Single leg gripping a loaded cup until slip threshold_
 
 ![Crawler in Motion](/assets/soft_robot/Soft_Crawler.gif)
-_4 legged competition run for decreased turn radius_
+_4-legged competition run for decreased turn radius_
 
 ![Competition Demo](/assets/soft_robot/Hype.gif)
 _Early testing of Skippy's movement modes_

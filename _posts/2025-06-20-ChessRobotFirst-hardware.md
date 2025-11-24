@@ -6,7 +6,7 @@ categories: [Chess Robot, Prototyping]
 tags: [Chess, CAD, Onshape, 3D Printing, CNC, Robotics, Prototyping, Hand tools]
 image:
   path: "/assets/chess/3hw/overhead_prototype.jpg"
-  alt: "The Chess Robot prototype on my coffee table! (With a stand in for the end effector I made years ago)"
+  alt: "The Chess Robot prototype on my coffee table! (With a stand-in for the end effector I made years ago)"
 pin: false
 ---
 
@@ -28,16 +28,16 @@ The goal for this iteration was to:
 
 ## Smooth Rail System
 
-Below are some pictures of the iterations of different components. I have a habit of writing on printed parts in marker where changes need to be made. This helps me visualize the changes, and makes sure I don't accidentally install the wrong version of a part. Sorry if some of my 'notes' sneak through in the pictures. 
+Below are some pictures of the iterations of different components. I have a habit of writing on printed parts in marker where changes need to be made. This helps me visualize the changes and makes sure I don't accidentally install the wrong version of a part. Sorry if some of my "notes" sneak through in the pictures. 
 
 <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
   <figure style="flex:1; min-width:280px;">
     <img src="/assets/chess/3hw/iterations.jpg" alt="part iteration" width="100%">
-    <figcaption><em>Practice Makes Perfect</em></figcaption>
+    <figcaption><em>Practice makes perfect</em></figcaption>
   </figure>
   <figure style="flex:1; min-width:280px;">
     <img src="/assets/chess/3hw/bearings.jpg" alt="View of bearing fit" width="100%">
-    <figcaption><em>Bearings and sneak peak at Belt</em></figcaption>
+    <figcaption><em>Bearings and sneak peak at belt</em></figcaption>
   </figure>
   <figure style="flex:1; min-width:280px;">
     <img src="/assets/chess/3hw/endview.jpg" alt="Endview of idler mount" width="100%">
@@ -50,7 +50,7 @@ Below are some pictures of the iterations of different components. I have a habi
 </div>
 
 
-I settled on an 8 mm rail system. Specifically 4 for the Y-axis (2 on each edge) and 2 on the X-axis. The pairs of rails provides stability, which we will need for the end effector riding on the X-axis carriage. The mounting holes in the stepper motors, and therefore the smooth rail attachment fixtures that sit over the mounting screws are 31±0.2mm apart. Design details flowing from the constraints of the hardware, for now. If stability becomes an issue we can redesign and make them further apart. 
+I settled on an 8 mm rail system. Specifically 4 for the Y-axis (2 on each edge) and 2 on the X-axis. The pairs of rails provides stability, which we will need for the end effector riding on the X-axis carriage. The mounting holes in the stepper motors, and therefore the smooth rail attachment fixtures that sit over the mounting screws, are 31 ± 0.2mm apart. Many of my design details are flowing from the constraints of the hardware, for now. If stability becomes an issue we can redesign and make them further apart. 
 
 ### Major Components Assembled
 - **Linear rail system** 
@@ -65,13 +65,13 @@ I settled on an 8 mm rail system. Specifically 4 for the Y-axis (2 on each edge)
 ## Gantry and Motion Envelope
 
 ![motion envelope](/assets/chess/3hw/envlope.gif){: .right}
-I wasn't able to track down my video of this step (and to give you a peak behind the curtain I have made significant progress since then), so enjoy this gif of the 3d model. 
+I wasn't able to track down my video of this step (and to give you a peek behind the curtain, I have made significant progress since then), so enjoy this gif of the 3D model. 
 
 ---
 
 ## Prototype Parts
 
-Some changes were required to the parts. 
+Some changes to the parts were required. 
 - It became clear that the motor mount screw holes were inaccessible so I widened the clearance for a screwdriver. 
 - The tolerance of printed parts was difficult to dial in. It depended on the orientation of the part being printed. I added a flex slot, which may come back to bite me if the gantry lacks rigidity. 
 
@@ -86,7 +86,7 @@ Some changes were required to the parts.
 - [ ] Begin motion testing
 
 #### **LET'S MAKE SOMETHING MOVE**
-Here's a sneak peak of what I've been working on for the next post.
+Here's a sneak peek of what I've been working on for the next post.
 
 
 ---

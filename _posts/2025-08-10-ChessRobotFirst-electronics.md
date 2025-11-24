@@ -17,7 +17,7 @@ pin: true
 ---
 
  ![grbllogo](/assets/chess/4elec/arduinogrbl.png){: .right}
-## Last post's todolist COMPLETE!
+## Last post's TO-DO list COMPLETE!
 - [x] Printed new carriage parts  
 - [x] Mounted linear rails and bearings  
 - [x] Integrated stepper driver and GRBL test  
@@ -34,7 +34,9 @@ pin: true
 
 ## Research 
 
-Early in my research for this project I came across GRBL, and the CNC Shield for the Arduino Uno. They are the standard answer for hobbyists trying to make their own custom CNC machines, plotters, and some 3D printers. Which is kind of what this robot is designed to be. Its got about 64 specific locations that we can send the end effector to to pick an place. Its kinda like a tool change at 64 locations. GRBL is flashed onto the Arduino and Gcode can then be sent to the robot directing its movements. Gcode is the industry standard for this type of motion. CNCs and 3D printers all use it. (This version of GRBL is slightly modified to accept servo commands.)
+Early in my research for this project I came across GRBL, and the CNC Shield for the Arduino Uno. They are the standard answer for hobbyists trying to make their own custom CNC machines, plotters, and some 3D printers. Which is kind of what this robot is designed to be. It's got about 64 specific locations where we can send the end effector to pick and place. Its kinda like a tool change at 64 locations. GRBL is flashed onto the Arduino, and Gcode can then be sent to the robot directing its movements. 
+
+Gcode is the industry standard for this type of motion. CNCs and 3D printers all use it. (This version of GRBL is slightly modified to accept servo commands.)
 
 ---
 
@@ -54,7 +56,7 @@ My solution to use this pair and is obviously financially motivated. Once I get 
 ![A4988 driver](/assets/chess/4elec/A4988.png){: .right}
 The shield literally just pops in on top of the Arduino and is done. A few enabling jumpers and it will run on its own power supply that we give separate to the Arduino drawing its 5 volts from the USB.
 
-On top of THAT the shield takes a few dedicated motor drivers. One for each stepper motors we are running. 
+On top of THAT the shield takes a few dedicated motor drivers. One for each stepper motor we are running. 
 
 All told the electrical hardware was pretty cheap:
 - Stepper Motors $16.99 (x3 I got an extra)
@@ -64,18 +66,18 @@ All told the electrical hardware was pretty cheap:
   - 4x Motor Drivers w/ radiators
   - 4x end stop switches 
   
-about $78 plus tax. 
+About $78 plus tax. 
 
 ---
 ## Universal Gcode Sender
 ![UGSlogo](/assets/chess/4elec/UGSlogo.png){: .right} 
-Of the Multitude of different methods of interfacing with the Arduino the most straight forward I've found so far with the most features and customization options, to use until I build my own python or ROS2 pipeline. It can import images and convert them to Gcode, which is the next step on the road. In order to get everything dialed in and make sure the structure can stand up to the movement in terms of things like rigidity and vibration. 
+Of the multitude of different methods for interfacing with the Arduino, it's the most straight forward I've found so far. It has the most features and customization options to use until I build my own python and ROS2 pipeline. It can import images and convert them to Gcode, which is the next step on the road. It lets us send test commands in order to get everything dialed in and make sure the structure can stand up to the movement in terms of things like rigidity and vibration. 
 
 ---
 
 ## End Stops 
 
-I ended up using 4 switches for end stops for maximum safety. The two at the home (0,0) coordinates are important for homing the system each time for calibration purposes. The two at the extremes of the envelope are mostly useless since I will be including soft limits for the robots travel, but they will be useful in case of coding errors or swapped symbols... not that I would ever make such a mistake. 
+I ended up using 4 switches for end stops for maximum safety. The two on the '-' side, (towards home) are important for homing the system each time for calibration purposes. The two at the extremes of the envelope are mostly useless since I will be including soft limits for the robots travel, but they will be useful in case of coding errors or swapped symbols... not that I would ever make such a mistake. 
 
 The switches themselves are just hot glued in place at the extremes of the Y-Axis and on the bottom of the X-Carriage as it moves from end to end.
 
