@@ -37,7 +37,7 @@ plugins:
 
 theme_mode: # [light | dark] or leave empty for auto
 avatar: "/assets/profile.jpg"
-social_preview_image:
+social_preview_image: "/assets/img/social-preview.png"
 toc: true
 paginate: 10
 
