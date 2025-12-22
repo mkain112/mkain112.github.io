@@ -1,13 +1,13 @@
 ---
 title: Chess-Playing Robot — Enclosure, Raspberry Pi, Joy Sick, and Buttons!
 description: Quality of life updates. Basic Enclosure, running locally on a Raspberry Pi, Buttons, and Joystick
-date: 2025-10-15 12:00:00
+date: 2025-10-30 12:00:00
 categories: [Chess Robot, Enclosure]
 tags: [CNC, GRBL, Universal Gcode Sender, Robotics, Prototyping, Joystick, Organization, Cats]
 image:
   path: "/assets/chess/6pi/frontview.jpg"
   alt: "It GLOWWWSSS"
-pin: true
+pin: false
 ---
 
 > **Work in Progress — Organization Stage**  

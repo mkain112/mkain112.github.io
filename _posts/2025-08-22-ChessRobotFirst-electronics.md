@@ -7,7 +7,7 @@ tags: [Chess, Sensors, Electronics, Arduino, CNC, GRBL, Gcode, Universal Gcode S
 image:
   path: "/assets/chess/4elec/googlydemo_cropped.gif"
   alt: "THE GOOGLY EYES ARE EVERYTHING"
-pin: true
+pin: false
 ---
 
 > **Work in Progress — Basic Electronics**  
