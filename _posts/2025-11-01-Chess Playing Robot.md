@@ -10,7 +10,7 @@ pin: false
 ---
 
 > **Work in Progress**  
-> This post is a running list of the .
+> This post is a running list of the things and systems I'm working on for the robot.
 {: .prompt-tip}
 
 ### **From Last Post**
@@ -37,10 +37,16 @@ pin: false
   - [ ] Mitch's Crazy Tube Idea? (front runner)
 
 ### **Electronics & Sensors**
-- [ ] Hall-effect sensors experimentation (current front runner)
-  - [ ] Add hall-effect test board 
-  - [ ] Magnet scheme?
-  - [ ] Bench-test
+- [ ] LR resonance experimentation (current front runner)
+  - [x] Resonator prototype
+    - [x] 103 cap
+    - [x] 104 cap
+  - [x] RX prototype
+  - [x] TX prototype
+- [x] Hall-effect sensors experimentation 
+  - [x] Add hall-effect test board 
+  - [x] Magnet scheme?
+  - [x] Bench-test
 - [x] RFID sensors experimentation
   - [x] Add RFID test board
   - [x] Bench-test
